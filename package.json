@@ -12,7 +12,7 @@
     "clean": "rm -rf ./dist",
     "dev": "tsc --watch --outDir ./demo/src/dist",
     "build": "npm run clean && rollup -c",
-    "release": "npm publish --registry http://registry.npm.al.com"
+    "release": "npm publish"
   },
   "repository": {
     "type": "git",
