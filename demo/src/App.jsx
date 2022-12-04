@@ -12,6 +12,7 @@ const App = () => {
       AvatarsGL.init_gl(canvasEle);
       inputEle.addEventListener('change', (e)=>{
         setLoad(true)
+        AvatarsGL.reset();
         const file = e.target.files[0];
         threedsuperme(file, {
           returnDataType: 'fileBlob', // 'fileBlob' fileUrl文件下载地址 、fileBlob文件数据流
