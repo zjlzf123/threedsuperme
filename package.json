@@ -1,6 +1,6 @@
 {
-  "name": "threedsuperme",
-  "version": "1.0.1",
+  "name": "threedsupermes",
+  "version": "1.0.0",
   "description": "3d superme",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",
