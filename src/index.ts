@@ -10,8 +10,11 @@ import {
   generateVisualExportParameters,
 } from "./utils";
 
-const AUTH_URL = "https://api.avatarsdk.com/o/token/";
-const API_URL = "https://api.avatarsdk.com/";
+//const AUTH_URL = "https://api.avatarsdk.com/o/token/";
+const AUTH_URL = "https://avatar-api.itseez3d.com/o/token/";
+//const API_URL = "https://api.avatarsdk.com/";
+
+const API_URL = "https://avatar-api.itseez3d.com/";
 const stored_client_id = "wl9sluOVVNMHtdyqOWnERP5RgukcKPbJUebgJJxe";
 const stored_client_secret =
   "6WBxXOq3lghNyDGadIuf2BzX9harUrO1RMd6sQ05NYBJAldm0EsywuT47k9IiaEaqE0RMRILumTv0ygN3ZVfpoiyoYkW4LHfhp3lmmJkN3mMIZJkP9aMUOCmjuIgeUM5";
@@ -19,7 +22,7 @@ const pipelineValue = "head_1.2 | base/static";
 
 async function getToken() {
   let stored_token: any = localStorage.getItem("access_token");
-
+  console.log("1234567");
   if (!!stored_token) {
     stored_token = JSON.parse(stored_token);
     let expired = _now() >= stored_token.expires - 60 * 5;

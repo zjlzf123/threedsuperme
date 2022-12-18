@@ -1,0 +1,5 @@
+1. 根目录 执行： npm run start 启动typescript编辑js
+2. demo 目录 执行: npm run start 看效果
+3. 根目录 执行: 删除dist目录 接下来 npm install 再执行 npm run build 打包
+4. git 提交
+5. npm run publish 发包
